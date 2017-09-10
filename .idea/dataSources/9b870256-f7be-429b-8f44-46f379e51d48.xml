@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - mydb@localhost [3]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mydb">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sys"/>
+    <table id="6" parent="1" name="reports"/>
+    <column id="7" parent="6" name="StartDate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="8" parent="6" name="EndDate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="9" parent="6" name="Performer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="10" parent="6" name="Activity">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="11" parent="6" name="PRIMARY">
+      <columns>Activity</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
